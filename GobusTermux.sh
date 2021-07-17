@@ -31,7 +31,8 @@ git clone https://github.com/OJ/gobuster
 cd gobuster
 chmod +x *
 go run main.go
-cd $HOME/go/bin
+cd $HOME
+cd go/bin
 mv gobuster /data/data/com.termux/files/usr/bin
 echo "Gobuster has been sucessfully installed!"
 echo "Type: gobuster to run the tool"
