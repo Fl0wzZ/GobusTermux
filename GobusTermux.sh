@@ -10,22 +10,7 @@ echo "
             +-+-+ +-+-+-+-+-+-+-+
 "
 cd $HOME
-echo "Checking if git is installed..."
-if [ -f /data/data/com.termux/files/usr/bin/git ]
-	then
-		echo "Git has already installed!"
-	else
-		echo "Git is not installed!"
-		pkg install git
-fi
-echo "Checking if golang is installed..."
-if [ -f /data/data/com.termux/files/usr/bin/git ]
-        then
-                echo "Golang has already installed!"
-        else
-		echo "Golang is not installed!"
-                pkg install golang
-fi
+pkg install golang
 
 git clone https://github.com/OJ/gobuster
 cd gobuster
